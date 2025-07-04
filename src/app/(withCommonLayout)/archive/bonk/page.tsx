@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import { Flame, Calendar, Hash, ExternalLink, TrendingDown } from "lucide-react";
+import { Flame, Calendar, Hash, TrendingDown } from "lucide-react";
 
 interface BonkBurnRecord {
     id: string;
@@ -60,7 +60,7 @@ const BonkBurnsPage: React.FC = () => {
                 return;
             }
 
-            const headers = data.values[0];
+            // const headers = data.values[0]; // Unused variable removed
             const rows = data.values.slice(1).filter((row: string[]) => row.length > 1);
 
             // Column positions for BONK data - adjust based on your sheet structure
@@ -71,7 +71,7 @@ const BonkBurnsPage: React.FC = () => {
 
             const parsedRecords: BonkBurnRecord[] = rows.map((row: string[], index: number) => {
                 // Parse date - handle various date formats
-                let dateValue = row[finalDateIdx] || "";
+                const dateValue = row[finalDateIdx] || "";
                 let formattedDate: string;
 
                 try {
@@ -336,7 +336,12 @@ const BonkBurnsPage: React.FC = () => {
 };
 
 // Simple Month Picker Component (without external dependencies)
-const MonthPicker = ({ selectedMonth, onChange }: any) => {
+interface MonthPickerProps {
+    selectedMonth: Date;
+    onChange: (date: Date) => void;
+}
+
+const MonthPicker = ({ selectedMonth, onChange }: MonthPickerProps) => {
     const months = [
         'January', 'February', 'March', 'April', 'May', 'June',
         'July', 'August', 'September', 'October', 'November', 'December'

@@ -90,9 +90,9 @@ export default function AboutUs() {
               Trobits: Your Fun Zone for Crypto News and Community
             </h2>
             <p className="text-gray-400 leading-relaxed text-lg">
-              Welcome to Trobits! We're a passionate group dedicated to making
+              Welcome to Trobits! We&apos;re a passionate group dedicated to making
               cryptocurrency and blockchain technology accessible and engaging for everyone.
-              Whether you're a seasoned crypto enthusiast or just starting out, Trobits
+              Whether you&apos;re a seasoned crypto enthusiast or just starting out, Trobits
               is your go-to hub for news, information, and entertainment.
             </p>
           </div>
@@ -143,7 +143,7 @@ export default function AboutUs() {
             
             <div className="max-w-4xl mx-auto space-y-6">
               <p className="text-gray-400 leading-relaxed text-lg text-center">
-                At Trobits, we believe in crypto's potential. That's why we use ad revenue to burn
+                At Trobits, we believe in crypto&apos;s potential. That&apos;s why we use ad revenue to burn
                 LUNC and SHIB tokens, promoting a more sustainable crypto ecosystem. Track the
                 impact directly on our homepage with live data on visitor counts, ad revenue, and
                 the amount of LUNC and SHIB burned!
@@ -179,7 +179,7 @@ export default function AboutUs() {
               {[
                 "We make crypto fun and approachable",
                 "Our community is welcoming to enthusiasts of all experience levels",
-                "We're committed to transparency in our burning efforts",
+                "We&apos;re committed to transparency in our burning efforts",
                 "We continually add new features to keep things exciting"
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-3 p-4 bg-black/30 border border-gray-800/30 rounded-2xl">

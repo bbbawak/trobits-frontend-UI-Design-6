@@ -1,0 +1,10 @@
+{
+  "name": "trobits-frontend-ui-design",
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ]
+} 
