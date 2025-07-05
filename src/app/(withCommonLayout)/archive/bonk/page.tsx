@@ -109,7 +109,7 @@ const BonkBurnsPage: React.FC = () => {
                     burnCount,
                     shibaBurnArchiveId: `archive_${index}`
                 };
-            }).filter(record => record.burnCount > 0);
+            }).filter((record: BonkBurnRecord) => record.burnCount > 0);
 
             setAllRecords(parsedRecords);
 
